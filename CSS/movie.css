@@ -96,6 +96,8 @@ span {
     padding: 0px;
 }
 .validator {
+
+    border-radius: 3px;
     position: fixed;
     bottom: 0;
     right: 0;
