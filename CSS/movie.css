@@ -24,9 +24,9 @@ body {
     height: 50px;
 }
 h1 {
-    font-size: 24pt;
-    font-family: Tahoma, Verdana, serif;
-    text-shadow: 3px 3px #999999;
+    font-size: 29pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 1px 1px #271c5a;
     text-align: center;
 }
 .reviews {
@@ -54,7 +54,7 @@ p > img {
     border-radius: 10px;
     border-color: indigo;
     background-color: #E8DC9B;
-    min-height: 24px;
+    min-height: 26px;
     padding: 8px;
 }
 
