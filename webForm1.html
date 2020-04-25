@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--This will repeat in every page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/webForm1.css">
+    <title>My W1D3 BootStrap </title>
+ 
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  navbar-light bg-primary">
+            <a class="navbar-brand text-white" href="#">Modern Dome Market ::: SRM System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="#">Products <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" > | <span class="sr-only">(current)</span></a>
+                  </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Suppliers</a>
+                </li>
+
+              </ul>
+            </div>
+            <span class="hello">Hello! </span>
+            <span class="sign-out"><input class="btn btn-light" type="button"  value="Sign Out"></span>
+          </nav>
+        
+    </header>
+    <main>
+      <div class="container">
+          <h1>New Product Form</h1>
+          <hr/>
+        <form id="contactForm" method="POST" action="contact-form-handler">
+            <fieldset>
+                <legend></legend>
+                
+            
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="customerName">Product Number</label>
+                    <input pattern="\d(10)" required class="form-control" type="text" name="customerName" id="cusotmerName">
+                    <!-- <small class="for-text text-muted"> Enter Your Full Name</small> -->
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="customerName">Quantitiy in stock</label>
+                    <input pattern="\d(10)" placeholder= "0" required class="form-control" type="text" name="customerName" id="cusotmerName">
+                    <!-- <small class="for-text text-muted"> Enter Your Full Name</small> -->
+                  </div>
+                <div class="col-md-6">
+                    <label for="customerName">Name</label>
+                    <input pattern="\d(10)" required class="form-control" type="text" name="customerName" id="cusotmerName">
+                    <!-- <small class="for-text text-muted"> Enter Your Full Name</small> -->
+                  </div>
+
+                <!-- <div class="col-md-6">
+                    <label>*Gender: </label><br>
+                    <div class="form-group">
+                        
+                        <div class="custom-control costom-radio">
+                            <input  required type="radio" name="radioGender"  id="radioGenderFemale" class="custom control-input">
+                            <label class="form-check-label" for="radiGenderFemale"> Female</label>
+                        </div>
+                        <div class="custom-control costom-radio">
+                            <input   type="radio" name="radioGender"  id="radioGenderMale" class="custom control-input">
+                            <label class="form-check-label" for="radiGenderFemale"> Male</label>
+                        </div>
+                     </div>
+                </div> -->
+                
+                
+                 <div class="col-md-6">
+                     <div class="form-group">
+                        <label for = "ddlCategory"> *Supplier </label><br>
+                        <select class= "form-control" name="ddlCategory" id="ddlCategory">
+                           
+                            <option value="null"> Select a supplier ..</option>
+                            <option value="Feedback"> Jenix </option>
+                            <option value="Inquiry"> EA Ltd</option>
+                            <option value="Complaint"> Maharshi</option>
+                            
+                        </select>
+                    </div>
+                </div>
+                
+                    <div class="col-md-6">
+                        <label for="customerName">Unit Price</label>
+                        <input pattern="\d(10)" placeholder= "0.0"required class="form-control" type="text" name="customerName" id="cusotmerName">
+                        <!-- <small class="for-text text-muted"> Enter Your Full Name</small> -->
+                      </div>
+                <!-- Date if needed can be added by uncommenting the below html code-->
+                <div class="col-md-6">
+                    <div class="form-group">
+                       <label for = "txtDateHired"> *Date Supplied </label><br>
+                      <input class= "form-control" type="date" name="dateHired" id="txtDateHired">
+                      <small>Enter a valid Date</small>
+                   </div>
+               </div>
+               <!-- <div class="col-md-2">
+                    <div class="form-group">
+                        <button id="btnSubmit" type="submit" class="btn btn-primary btn-block">Submit</button>
+                </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <button id="btnSubmit" type="submit" class="btn btn-primary btn-block">Submit</button>
+                </div>
+                </div> -->
+                <div class="row offset-md-7">
+                  
+                        <div col-md-3>
+                            <button type="button" class="btn btn-outline-primary">Reset</button>
+                         
+                        </div>
+                        <div col-md-3>
+                            <!-- <button id="btnSubmit" type="submit" class="cancle">Cancle</button> -->
+                            <button type="button" class="btn btn-outline-warning">Cancle</button>
+                         
+                        </div>
+                        <div col-md-4>
+                            <!-- <button id="cancle" type="cancle" class="add-product">Add Product</button> -->
+                           <button type="button" class="btn btn-outline-info">Add Product</button>
+                        </div>
+                        
+                        
+              
+               </div>
+            
+            </fieldset>
+          </form>
+          
+      </div>
+    </main>
+    <footer>
+       <div>
+           <span id="right-footertext"> R. Teferi ::: CS472 </span>
+           <span class="right-footertext"> &copy;  April 22, 2020</span>
+    </div>
+        
+ <!-- Best to place java script library is in the footer to avoid slowing down the website
+        -->
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </footer>
+</body>
+</html>
