@@ -1,6 +1,4 @@
-.row>div{
-    padding: 10px;
-}
+/*Style webForm.css*/
 footer{
     background-color: lightgray;
     width:100vw;
@@ -40,3 +38,6 @@ color: white;
     color: white !important;
     font-size: 1.8em !important;
     }
+#robel{
+    margin-right:215px;
+}
