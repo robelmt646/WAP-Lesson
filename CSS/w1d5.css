@@ -1,0 +1,13 @@
+span.validity::after{
+    content: X ;
+}
+.highlighted{
+    background-color: blue;
+}
+#id{
+    height: 30px;
+    width: auto;
+    background-color: black;
+    font-size: 50px;
+    margin-left: 30px ;
+}

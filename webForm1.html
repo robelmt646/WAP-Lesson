@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/CSS/webForm1.css">
+    <script defer src="JS/webForm1.js"></script>
     <title>My W1D3 BootStrap </title>
     
 </head>
@@ -17,6 +18,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link text-white" > | <span class="sr-only">(current)</span></a>
+                </li>
+             
+              <li class="nav-item">
                 <li class="nav-item active">
                   <a class="nav-link text-white" href="#">Products <span class="sr-only">(current)</span></a>
                 </li>
@@ -47,19 +53,19 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <label for="customerName">Product Number</label>
-                    <input pattern="" required class="form-control" type="text" name="customerName" id="cusotmerName">
+                    <label for="productNumber">Product Number</label>
+                    <input required class="form-control" type="text" name="customerName" id="productNumber">
                     <!-- <small class="for-text text-muted"> Enter Your Full Name</small> -->
                   </div>
                   
                   <div class="col-md-6">
-                    <label for="customerName">Quantitiy in stock</label>
-                    <input pattern="" placeholder= "0" required class="form-control" type="text" name="customerName" id="cusotmerName">
+                    <label for="quantityInStock">Quantitiy in stock</label>
+                    <input  placeholder= "0" required class="form-control" type="text" name="customerName" id="quantityInStock">
                     <!-- <small class="for-text text-muted"> Enter Your Full Name</small> -->
                   </div>
                 <div class="col-md-6">
-                    <label for="customerName">Name</label>
-                    <input pattern="" required class="form-control" type="text" name="customerName" id="cusotmerName">
+                    <label for="name">Name</label>
+                    <input  required class="form-control" type="text" name="customerName" id="name">
                     <!-- <small class="for-text text-muted"> Enter Your Full Name</small> -->
                   </div>
 
@@ -81,8 +87,8 @@
                 
                  <div class="col-md-6">
                      <div class="form-group">
-                        <label for = "ddlCategory"> *Supplier </label><br>
-                        <select class= "form-control" name="ddlCategory" id="ddlCategory">
+                        <label for = "supplier"> *Supplier </label><br>
+                        <select class= "form-control" name="ddlCategory" id="supplier">
                            
                             <option value="null"> Select a supplier ..</option>
                             <option value="Feedback"> Jenix </option>
@@ -94,46 +100,19 @@
                 </div>
                 
                     <div class="col-md-6">
-                        <label for="customerName">Unit Price</label>
-                        <input pattern="\d(10)" placeholder= "0.0"required class="form-control" type="text" name="customerName" id="cusotmerName">
+                        <label for="unitPrice">Unit Price</label>
+                        <input pattern="\d(2)" placeholder= "0.0"required class="form-control" type="text" name="customerName" id="unitPrice">
                         <!-- <small class="for-text text-muted"> Enter Your Full Name</small> -->
                       </div>
                 <!-- Date if needed can be added by uncommenting the below html code-->
                 <div class="col-md-6">
                     <div class="form-group">
-                       <label for = "txtDateHired"> *Date Supplied </label><br>
-                      <input class= "form-control" type="date" name="dateHired" id="txtDateHired">
+                       <label for = "dateSupplied"> *Date Supplied </label><br>
+                      <input class= "form-control" type="date" name="dateHired" id="dateSupplied">
                       <small>Enter a valid Date</small>
                    </div>
                </div>
-               <!-- <div class="col-md-2">
-                    <div class="form-group">
-                        <button id="btnSubmit" type="submit" class="btn btn-primary btn-block">Submit</button>
-                </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="form-group">
-                        <button id="btnSubmit" type="submit" class="btn btn-primary btn-block">Submit</button>
-                </div>
-                </div> -->
-                <!-- <div class="row offset-md-7">
-                  
-                        <div col-md-3 >
-                            <button type="button" class="btn btn-outline-primary">Reset</button>
-                         
-                        </div>
-                        <div col-md-3>
-                            <button id="btnSubmit" type="submit" class="cancle">Cancle</button>
-                            <button type="button" class="btn btn-outline-warning">Cancle</button>
-                         
-                        </div>
-                        <div col-md-4>
-                            <button id="cancle" type="cancle" class="add-product">Add Product</button>
-                           <button type="button" class="btn btn-outline-info">Add Product</button>
-                        </div> -->
-                        
-                        
-              
+
               
             
             </fieldset>
