@@ -4,7 +4,8 @@
 
 
 
-// find largest numbers between two
+//            *** largestOfTwo ***`
+//-----------------------------------------------------------------------------------------------------------------------
 const largestOfTwo = function max(a,b){
 
    if(a>b){
@@ -14,7 +15,9 @@ const largestOfTwo = function max(a,b){
        return b;
    }
 }
-console.log(largestOfTwo(52,3));
+console.log("Largest Number : "+largestOfTwo(52,3));
+
+//            *** largestOfThree ***`
 //----------------------------------------------------------------------------------------------------------------------
 // find largest number from three
 const largestOfThree = function maxOfThree(a,b,c){
@@ -33,10 +36,14 @@ const largestOfThree = function maxOfThree(a,b,c){
     }
 }
 
-console.log(largestOfThree(2,2,4));
+console.log("Largest Number : "+largestOfThree(2,2,4));
 
-let arrX = [4,5,5,6,2]
 
+
+
+//               *** check if Character is vowel ***`
+//-------------------------------------------------------------------------------------------------------------------------
+let arrX = [4,5,5,2]
 let sumOfNumbers= function sum(arr){
     let sum= 0;
     for (let i = 0; i < arr.length; i++) {
@@ -47,40 +54,39 @@ let sumOfNumbers= function sum(arr){
 }
 
 let Multiplication= function mult(arr){
-    let sum= 0;
+    let sum= 1;
     for (let i = 0; i < arr.length; i++) {
         sum*=arr[i];
-        
     }
     return sum;
 }
 
-console.log(Multiplication("Sum of Numbers : "+ arrX));
-console.log("Sum of Numbers : "+ sumOfNumbers(arrX));
+console.log("Mult of Numbers in Array: "+ Multiplication(arrX));
+console.log("Sum of Numbers in Array : "+ sumOfNumbers(arrX));
 
-//check if character is vowel
+//`                 *** check if Character is vowel ***`
 //-----------------------------------------------------------------------------------------------------------------------
-// let checkChar = function isVowel(x) {
+let checkChar = function isVowel(x) {
 
-//     var result;
+    let result;
   
-//     result = x == "A" || x =='a' || x == 'e'|| x == "E" || x == "I" || x == 'i'|| x == "O" || x == 'o'|| x == "U"|| x=='u';
-//     return result;
-//   }
+    result = x == "A" || x =='a' || x == 'e'|| x == "E" || x == "I" || x == 'i'|| x == "O" || x == 'o'|| x == "U"|| x=='u';
+    return result;
+  }
   
-// //   var input;
+//   var input;
   
-// //   do {
-// //     input = prompt("Enter a character ");
-// //     if (input.length == 1) {
-// //       alert(isVowel(input));
-// //     }
-// //   } while (input.length != 1);
+//   do {
+//     input = prompt("Enter a character ");
+//     if (input.length == 1) {
+//       alert(isVowel(input));
+//     }
+//   } while (input.length != 1);
 
-//   console.log(checkChar(a));
+  console.log("Check if Char: "+checkChar('a'));
 
-  // ex 5
 
+//                                *** Reverse ***  
   //-------------------------------------------------------------------------------------
   let reversString = function reverse(x){
     let splitString = x.split("");
@@ -89,7 +95,7 @@ console.log("Sum of Numbers : "+ sumOfNumbers(arrX));
     return joinReversedStrArray; 
 }
 
- console.log( reversString("Robel"));
+ console.log( "Reverse of Robel: "+reversString("Robel"));
 
  let reverseAstring= function revStr(string){
     let newStr = "";
@@ -100,7 +106,9 @@ console.log("Sum of Numbers : "+ sumOfNumbers(arrX));
     return newStr;
  }
 
- console.log(reverseAstring("Selamawit"));
+ console.log("Reverse of Seamawit: "+reverseAstring("Selamawit"));
+
+//                       *** findLongestWord ***
 //--------------------------------------------------------------------------------------------------------
  let findLongestWord = function longsestWord(array){
      let longest = array[0].length;
@@ -115,8 +123,11 @@ console.log("Sum of Numbers : "+ sumOfNumbers(arrX));
 
  let x =["hello","bye","Robel" , "Henokaaa"];
 
- console.log(findLongestWord(x));
+ console.log("Find Longest Word: "+findLongestWord(x));
 
+
+
+ //             ***computeSumOfSquares***
 //------------------------------------------------------------------------------------------------------
 
 let computeSumOfSquares = function square(array){
@@ -130,8 +141,10 @@ let computeSumOfSquares = function square(array){
 }
 
 let num = [1,2,3,5,7];
-console.log(computeSumOfSquares(num));
+console.log("Sum of Squares : "+computeSumOfSquares(num));
 
+
+//                        *** printOddNumber ***
 //------------------------------------------------------------------------------------------------------
 let printOddNumber = function OddNum(array){
     let newArr = [];
@@ -143,8 +156,10 @@ let printOddNumber = function OddNum(array){
     } return newArr;
 }
 let num1 = [11,22,33,45,77,64,68];
-console.log(printOddNumber(num1));
+console.log("Print Odd Numbers: "+printOddNumber(num1));
 
+
+//                       *** computeSumOfSquaresOfEvensOnly ***
 //--------------------------------------------------------------------------------------------------------
 
 let computeSumOfSquaresOfEvensOnly = function sumOfSquareOfEven(arr){
@@ -158,8 +173,10 @@ let computeSumOfSquaresOfEvensOnly = function sumOfSquareOfEven(arr){
     return sum;
 }
 let num3 = [1,2,3,4,5];
-console.log(computeSumOfSquaresOfEvensOnly(num3));
+console.log("Sum of Square of Even Numbers: "+computeSumOfSquaresOfEvensOnly(num3));
 
+
+//                 *** secondBiggestNum ***
 //--------------------------------------------------------------------------------------------------------
 
 let secondBiggestNum = function secondBiggest(arr){
@@ -175,8 +192,10 @@ let secondBiggestNum = function secondBiggest(arr){
 
 }
 let num4 = [1,2,3,4,5,6,7,8];
-console.log(secondBiggestNum(num4));
+console.log("Second Biggest in Array: "+secondBiggestNum(num4));
 
+
+//                *** sumOfNum (Stream) ***
 //-------------------------------------------------------------------------------------------------------------
 let arrY = [1,2,3,4,5];
 let total = function sumFunctionalPro(arrY){
@@ -184,15 +203,17 @@ let total = function sumFunctionalPro(arrY){
 const sumOfNum = arrY.reduce((sum, num) => sum+ num);
 return sumOfNum;
 }
-console.log(total(arrY));
+console.log("Stream Addition: "+total(arrY));
 
 let totalMult = function multFunctionalPro(arrY){
 
     const sumOfNum = arrY.reduce((sum, num) => sum* num);
     return sumOfNum;
     }
-console.log(totalMult(arrY));
+console.log("Stream multipilcation: "+totalMult(arrY));
 
+
+//                    *** printFibo ***
 //-------------------------------------------------------------------------------------------------------------
 
 let printFibo = function fib(number, startNumber, secondStartNumber){
@@ -207,8 +228,10 @@ let printFibo = function fib(number, startNumber, secondStartNumber){
    return fib;
 }
 
-console.log("Fibinacci : " + printFibo(6, 1,2));
+console.log("Fibinacci Numbers: " + printFibo(6, 1,2));
 
+
+//                       *** Clock ***
 //--------------------------------------------------------------------------------------------------------------
 
 document.getElementById("button").onclick = function(){
