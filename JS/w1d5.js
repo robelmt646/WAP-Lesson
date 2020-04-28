@@ -241,5 +241,26 @@ document.getElementById("button").onclick = function(){
         document.getElementById("clock").innerHTML = dateString;
        // document.getElementById("image").src ="image/giphy.gif"; }, 1000);    
 
-    } ) 
+    } ) ;
   }
+
+
+  let divs = document.getElementsByTagName("div");
+
+
+
+  for(var i = 0; i < divs.length; ++i)
+  
+  {
+  
+     if(divs[i].id != null) 
+  
+     {
+  
+        console.log(divs[i].id);
+  
+        // ...
+  
+     }
+  
+  }   
