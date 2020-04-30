@@ -19,7 +19,7 @@ console.log(ConterAddorReset.Reset()); // 0  -- reseted
 console.log(ConterAddorReset.Incriment()); // 0 + 1 = 1
 
 
-
+//----------------------------------------------------------------//----------------------------------------------------------------
 
 const MakeAdder = (function(){
     let counter = 0;
@@ -34,6 +34,8 @@ console.log(MakeAdder(5)); // 0 + 5 = 5
 console.log(MakeAdder(5)); // 5 + 5 = 10
 console.log(MakeAdder(5)); // 5 + 5 = 10
 
+
+//-----------------------------------------------------------//-------------------------------------------------------------------
 
 const EmployeeObjectModel = (function(){
 
@@ -93,6 +95,8 @@ EmployeeObjectModel.increaseSalary(20);
 EmployeeObjectModel.incrementAge(4);
 EmployeeObjectModel.printAll();
 
+
+//---------------------------------------------------------------------//---------------------------------------------------------------
 
 EmployeeObjectModel.address ="";
 EmployeeObjectModel.setAddress = function(newAddress){
