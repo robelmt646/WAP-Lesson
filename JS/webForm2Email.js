@@ -27,7 +27,7 @@ $(function(){
     { 
         evt.preventDefault();
 
-        $("contactForm").find("input").each(
+        $("form").find("input").each(
             function(){
             console.log($(this).val());
         })
