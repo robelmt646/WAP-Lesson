@@ -25,7 +25,7 @@
 $(function(){
     $("#SignUpButton").click(
         function(evt){ evt.preventDefault();
-        $("form").find("input").each(
+        $("contactForm").find("input").each(
             function(){
             console.log($(this).val());
         })
