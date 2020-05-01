@@ -22,7 +22,8 @@
 //     alert("Check answer at console");
 // } 
 
-$(function(){"use strict";
+$(function(){ 
+
     $("#SignUpButton").click(function(evt)
     { 
         evt.preventDefault();
