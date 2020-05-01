@@ -1,4 +1,4 @@
-"use strict";
+
 //1 Solution one
 // function myFunction(){
 //                 let x = document.getElementById("emailAddress").value;
@@ -22,7 +22,7 @@
 //     alert("Check answer at console");
 // } 
 
-$(function(){
+$(function(){"use strict";
     $("#SignUpButton").click(function(evt)
     { 
         evt.preventDefault();
