@@ -23,8 +23,10 @@
 // } 
 
 $(function(){
-    $("#SignUpButton").click(
-        function(evt){ evt.preventDefault();
+    $("#SignUpButton").click(function(evt)
+    { 
+        evt.preventDefault();
+
         $("contactForm").find("input").each(
             function(){
             console.log($(this).val());
@@ -32,4 +34,11 @@ $(function(){
     })
 });
 
+// $(function(){
+//     $("#SignUpButton").on('click', printform);
+// })
+
+// function printform(event){
+
+// }
 //2
