@@ -1,0 +1,13 @@
+
+/* main-styles.css */
+/* author: Robel Teferi */
+/* Exam Date: 2020-05-05 */
+
+table { 
+    border-collapse: collapse;    }  
+table, th, td { 
+    border: 1px solid black; 
+} 
+td { 
+    height: 10px; 
+}
