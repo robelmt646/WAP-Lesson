@@ -12,6 +12,8 @@ const ConterAddorReset = (function(){
    }
 })();
 
+
+
 ConterAddorReset.Incriment();//  0 +1 = 1
 ConterAddorReset.Incriment();// 1 + 1 = 2
 console.log(ConterAddorReset.Incriment());// 2 + 1 = 3
